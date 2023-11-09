@@ -11,11 +11,12 @@ namespace Domain.Entities
     public User User { get; set; }
     public DateTime OrderDate { get; set; }
     public string Status { get; set; }
-    public string ShippingAddress { get; set; }
-    public string ShippingCity { get; set; }
-    public string ShippingState { get; set; }
-    public string ShippingZipCode { get; set; }
-    public string ShippingCountry { get; set; }
+    public int AddressId {get;set;}
+    public Address Address {get;set;}
+    public int CityId {get;set;}
+    public City City {get;set;}
+    public int PaymentId {get;set;}
+    public Payment Payment {get;set;}
     public ICollection<OrderDetail> OrderDetails { get; set; }
 }
 

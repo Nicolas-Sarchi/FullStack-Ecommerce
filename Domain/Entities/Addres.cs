@@ -19,6 +19,4 @@ public class Address : BaseEntity
     public ICollection<Order> Orders { get; set; }
 }
 
-
-
 }
